@@ -42,6 +42,7 @@ return [
     'extensions' => array_filter([
         env('CACHET_EMOJI', false) ? 'AltThree\Emoji\EmojiExtension' : null,
         env('CACHET_AUTO_TWITTER', true) ? 'AltThree\Twitter\TwitterExtension' : null,
+        env('CACHET_TABLES', false) ? 'Webuni\CommonMark\TableExtension\TableExtension' : null
     ]),
 
     /*
